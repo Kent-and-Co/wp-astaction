@@ -9640,4 +9640,27 @@ body {
   color: #fbfaf5;
 }
 
+.bg-gray {
+  background-color: #302833;
+}
+
+.nav .nav-link {
+  color: #fbfaf5;
+  border-color: #fbfaf5;
+}
+
+.nav .nav-link:hover {
+  color: #ec6d71;
+  background-color: #0d0015;
+}
+
+.table {
+  color: #fbfaf5;
+}
+
+.badge-talent {
+  color: #fbfaf5;
+  background-color: #c9171e;
+}
+
 /*# sourceMappingURL=style.css.map */

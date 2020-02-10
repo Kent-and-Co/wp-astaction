@@ -3,3 +3,28 @@ body {
   background-color: $astblack;
   color: $astwhite;
 }
+
+.bg-gray {
+  background-color: $astgray;
+}
+
+.nav {
+  .nav-link {
+    color: $astwhite;
+    border-color: $astwhite;
+
+    &:hover {
+      color: $astpink;
+      background-color: $astblack;
+    }
+  }
+}
+
+.table {
+  color: $astwhite;
+}
+
+.badge-talent {
+  color: $astwhite;
+  background-color: $astred;
+}
