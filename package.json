@@ -16,7 +16,6 @@
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {
-    "@prettier/plugin-php": "^0.12.0",
     "eslint": "^6.8.0",
     "eslint-config-wordpress": "^2.0.0",
     "prettier": "^1.19.1"
