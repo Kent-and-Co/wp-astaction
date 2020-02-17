@@ -1,0 +1,155 @@
+// main: style.scss
+footer {
+  .drower {
+    background-color: $astgray;
+
+    nav {
+      a {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        border: solid 1px $astred;
+        background-color: $astwhite;
+        overflow: hidden;
+        text-align: center;
+        color: $astblack;
+        text-decoration: none;
+
+        &:active,
+        &:hover {
+          color: $astblack;
+          text-decoration: none;
+        }
+
+        .icon {
+          img {
+            width: 20px;
+            margin: 5px auto 3px;
+          }
+
+          i {
+            font-size: 20px;
+            margin: 8px auto 3px;
+            color: $astred;
+          }
+        }
+
+        .text {
+          font-size: 0.5rem;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .tab-bar {
+    background-color: $astwhite;
+    padding-bottom: constant(safe-area-inset-bottom);
+    padding-bottom: env(safe-area-inset-bottom);
+
+    nav {
+      a,
+      div {
+        color: $astred;
+        text-decoration: none;
+
+        &:active,
+        &:hover {
+          color: $astpink;
+          text-decoration: none;
+        }
+
+        .icon {
+          display: block;
+          font-size: 1.5rem;
+          position: relative;
+          height: 2rem;
+
+          img {
+            height: 2rem;
+            position: absolute;
+            bottom: 0;
+            left: calc(50% - 10px);
+          }
+
+          .bars {
+            height: 2rem;
+
+            span {
+              background-color: $astred;
+              height: 4px;
+              border-radius: 2px;
+              width: 1.5rem;
+              margin: auto;
+              position: absolute;
+              opacity: 1;
+              top: calc(50% - 2px);
+              left: calc(50% - 0.75rem);
+              transition: opacity 0.3s ease-in-out;
+            }
+
+            &::before,
+            &::after {
+              display: block;
+              content: "";
+              background-color: $astred;
+              height: 4px;
+              border-radius: 2px;
+              width: 1.5rem;
+              margin: auto;
+              position: absolute;
+              left: calc(50% - 0.75rem);
+              transition: top 0.3s ease-in-out, transform 0.3s ease-in-out;
+            }
+
+            &::before {
+              top: calc(50% - 10px);
+            }
+
+            &::after {
+              top: calc(50% + 6px);
+            }
+
+            &.opened {
+              span {
+                opacity: 0;
+              }
+
+              &::after {
+                transform: rotate(-405deg);
+                top: 50%;
+              }
+
+              &::before {
+                transform: rotate(405deg);
+                top: 50%;
+              }
+            }
+          }
+        }
+
+        .text {
+          display: block;
+          font-size: 0.6rem;
+          text-transform: uppercase;
+        }
+
+        &.menu {
+          .text {
+            &.toggle {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .copyright {
+      padding-bottom: 3rem;
+      margin-bottom: constant(safe-area-inset-bottom);
+      margin-bottom: env(safe-area-inset-bottom);
+    }
+  }
+}

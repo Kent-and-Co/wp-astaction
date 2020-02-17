@@ -8,10 +8,18 @@ body {
   background-color: $astgray;
 }
 
+.logo {
+  img {
+    height: 100%;
+    max-height: 50px;
+  }
+}
+
 .nav {
   .nav-link {
     color: $astwhite;
     border-color: $astwhite;
+    font-size: 0.8rem;
 
     &:hover {
       color: $astpink;
@@ -27,4 +35,20 @@ body {
 .badge-talent {
   color: $astwhite;
   background-color: $astred;
+}
+
+.line {
+  img {
+    height: 50px;
+    display: block;
+    margin: 0 30px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    border-top: 1px solid $astwhite;
+    flex: 1;
+  }
 }

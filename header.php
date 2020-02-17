@@ -3,9 +3,11 @@
 <head>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body  <?php body_class(); ?>>
+	<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v6.0&appId=301435123631625&autoLogAppEvents=1"></script>
 	<div class="container">
-		<div class="row justify-content-md-between mt-2">
+		<div class="row mt-2 logo">
 			<img src="<?php echo get_template_directory_uri(); ?>/images/logo-white.svg" alt="【画像】AST Action School ロゴ" class="mx-auto d-block col-md-5">
 		</div>
 		<div class="row">
@@ -16,10 +18,12 @@
 			</div>
 		</div>
 	</div>
-	<div class="container-fluid">
+	<div class="container-fluid d-none d-lg-block sticky-top">
 		<div class="row justify-content-center bg-gray">
 			<nav class="nav">
-				<a class="nav-link text-center border-top border-bottom mt-2 mb-2 ml-1 mr-1" href="#">TOP</a>
+				<a class="nav-link text-center border-top border-bottom mt-2 mb-2 ml-1 mr-1" href="
+				<?php echo esc_url( home_url( '/' ) ); ?>
+				">TOP</a>
 				<a class="nav-link text-center border-top border-bottom mt-2 mb-2 ml-1 mr-1" href="#">ABOUT AST</a>
 				<a class="nav-link text-center border-top border-bottom mt-2 mb-2 ml-1 mr-1" href="#">タレント</a>
 				<a class="nav-link text-center border-top border-bottom mt-2 mb-2 ml-1 mr-1" href="#">忍者ショー</a>
