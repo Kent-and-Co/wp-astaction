@@ -51,3 +51,6 @@ if ( ! function_exists( 'ast_line' ) ) {
 		<?php
 	}
 }
+
+// remove type attr. from script and style tags
+add_theme_support( 'html5', array( 'script', 'style' ) );

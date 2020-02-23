@@ -3,8 +3,8 @@
 <div class="container">
 	<div class="row mb-5">
 		<div class="col-lg-4">
-			<a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/astaction?ref_src=twsrc%5Etfw">Tweets by astaction</a>
-			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+			<a class="twitter-timeline" data-height="400" data-theme="dark" href="https://twitter.com/astaction?ref_src=twsrc%5Etfw">Tweets by astaction</a>
+			<script async src="https://platform.twitter.com/widgets.js"></script>
 		</div>
 		<div class="col-lg-4">
 			<div class="fb-page" data-href="https://www.facebook.com/ASTactionschool/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ASTactionschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ASTactionschool/">AST(アスト)アクションスクール</a></blockquote></div>
@@ -109,7 +109,7 @@
 					<a href="#" class="flex-fill text-center"><span class="icon"><i class="far fa-id-card"></i></span><span class="text">Talents</span></a>
 					<a href="#" class="flex-fill text-center"><span class="icon"><i class="fas fa-school"></i></span><span class="text">School</span></a>
 					<a href="#" class="flex-fill text-center"><span class="icon"><i class="fas fa-comment-alt"></i></span><span class="text">Blog</span></a>
-					<div class="flex-fill text-center menu"><span class="icon"><div class="bars"><span></span></div></span><span class="text">Menu</span><span class="text toggle">close</span></a>
+					<div class="flex-fill text-center menu"><span class="icon"><span class="bars"><span></span></span></span><span class="text">Menu</span><span class="text toggle">close</span></div>
 				</nav>
 			</div>
 		</div>

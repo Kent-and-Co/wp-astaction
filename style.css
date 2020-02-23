@@ -9918,18 +9918,21 @@ header .nav .nav-link:hover {
   padding: 10px;
   margin-left: auto;
   margin-right: auto;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-.widget_company .footer_contact_link a :hover,
-.widget_company .footer_contact_link a :active,
-.widget_company .footer_tel_link a :hover,
-.widget_company .footer_tel_link a :active {
+.widget_company .footer_contact_link a:hover, .widget_company .footer_contact_link a:active,
+.widget_company .footer_tel_link a:hover,
+.widget_company .footer_tel_link a:active {
   text-decoration: none;
+  background-color: #ec6d71;
+  color: #fbfaf5;
 }
 
 .widget_company .footer_contact_link a i,
 .widget_company .footer_tel_link a i {
   width: 1.4rem;
+  text-align: center;
 }
 
 .widget_company .footer_contact_link a .button_text,
@@ -10013,6 +10016,7 @@ footer .tab-bar nav div .icon img {
 footer .tab-bar nav a .icon .bars,
 footer .tab-bar nav div .icon .bars {
   height: 2rem;
+  display: block;
 }
 
 footer .tab-bar nav a .icon .bars span,
