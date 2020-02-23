@@ -9644,22 +9644,6 @@ body {
   background-color: #302833;
 }
 
-.logo img {
-  height: 100%;
-  max-height: 50px;
-}
-
-.nav .nav-link {
-  color: #fbfaf5;
-  border-color: #fbfaf5;
-  font-size: 0.8rem;
-}
-
-.nav .nav-link:hover {
-  color: #ec6d71;
-  background-color: #0d0015;
-}
-
 .table {
   color: #fbfaf5;
 }
@@ -9680,6 +9664,26 @@ body {
   display: block;
   border-top: 1px solid #fbfaf5;
   flex: 1;
+}
+
+header {
+  background-color: #0d0015;
+}
+
+header .logo img {
+  height: 100%;
+  max-height: 50px;
+}
+
+header .nav .nav-link {
+  color: #fbfaf5;
+  border-color: #fbfaf5;
+  font-size: 0.8rem;
+}
+
+header .nav .nav-link:hover {
+  color: #ec6d71;
+  background-color: #0d0015;
 }
 
 .hero-container {
@@ -9872,6 +9876,66 @@ body {
   100% {
     left: 150%;
   }
+}
+
+.widget_company .footer_logo img {
+  width: 50%;
+  max-width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_company .footer_logo_text img {
+  width: 70%;
+  max-width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_company .footer_address {
+  font-size: 0.8rem;
+}
+
+.widget_company .footer_address address {
+  display: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_company .footer_contact_link a,
+.widget_company .footer_tel_link a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  border: 1px solid #c9171e;
+  border-radius: 5px;
+  color: #ec6d71;
+  font-size: 1.4rem;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget_company .footer_contact_link a :hover,
+.widget_company .footer_contact_link a :active,
+.widget_company .footer_tel_link a :hover,
+.widget_company .footer_tel_link a :active {
+  text-decoration: none;
+}
+
+.widget_company .footer_contact_link a i,
+.widget_company .footer_tel_link a i {
+  width: 1.4rem;
+}
+
+.widget_company .footer_contact_link a .button_text,
+.widget_company .footer_tel_link a .button_text {
+  flex: 1;
+  text-align: center;
 }
 
 footer .drower {

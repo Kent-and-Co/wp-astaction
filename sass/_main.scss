@@ -8,26 +8,6 @@ body {
   background-color: $astgray;
 }
 
-.logo {
-  img {
-    height: 100%;
-    max-height: 50px;
-  }
-}
-
-.nav {
-  .nav-link {
-    color: $astwhite;
-    border-color: $astwhite;
-    font-size: 0.8rem;
-
-    &:hover {
-      color: $astpink;
-      background-color: $astblack;
-    }
-  }
-}
-
 .table {
   color: $astwhite;
 }

@@ -1,4 +1,8 @@
 <?php
+// theme customizer
+require get_template_directory() . '/customizer/telephone.php';
+require get_template_directory() . '/customizer/copyright.php';
+
 // add main style
 function ast_load_main_style() {
 	wp_enqueue_style(

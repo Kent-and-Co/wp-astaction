@@ -1,7 +1,7 @@
 <?php ast_line(); ?>
 
 <div class="container">
-	<div class="row">
+	<div class="row mb-5">
 		<div class="col-lg-4">
 			<a class="twitter-timeline" data-height="600" data-theme="dark" href="https://twitter.com/astaction?ref_src=twsrc%5Etfw">Tweets by astaction</a>
 			<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -9,17 +9,50 @@
 		<div class="col-lg-4">
 			<div class="fb-page" data-href="https://www.facebook.com/ASTactionschool/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/ASTactionschool/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/ASTactionschool/">AST(アスト)アクションスクール</a></blockquote></div>
 		</div>
+		<div class="col-lg-4 widget_company">
+			<div class="footer_logo mt-3 mb-3">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo-teru-white.svg" alt="【画像】ASTロゴ">
+			</div>
+			<div class="footer_logo_text mt-3 mb-3">
+				<img src="<?php echo get_template_directory_uri(); ?>/images/logo-text-white.svg" alt="Action Stunt Tecnique">
+			</div>
+			<div class="footer_address mt-3 mb-3">
+				<address>〒188-0011<br>東京都西東京市田無町3-11-12 みどりやビル4F</address>
+			</div>
+			<div class="footer_contact_link">
+				<a href="">
+					<i class="fas fa-envelope-open"></i>
+					<div class="button_text">お問い合わせ</div>
+				</a>
+			</div>
+			<?php
+			if ( get_ast_telephone_no() ) :
+				?>
+				<div class="footer_tel_link mt-3 mb-3">
+					<a href="tel:<?php echo get_ast_telephone_no( true ); ?>">
+						<i class="fas fa-mobile-alt"></i>
+						<div class="button_text"><?php echo get_ast_telephone_no(); ?></div>
+					</a>
+				</div>
+			<?php endif; ?>
+		</div>
 	</div>
 </div>
 
 <footer>
+	<?php
+	if ( get_ast_copyright() ) :
+		?>
 	<div class="container-fluid">
 		<div class="row bg-gray copyright">
 			<div class="col text-center">
-				<small>&copy; アストアクションスクール</small>
+				<small><?php echo get_ast_copyright(); ?></small>
 			</div>
 		</div>
 	</div>
+		<?php
+	endif;
+	?>
 
 	<div class="container-fluid d-md-block d-lg-none">
 		<div class="row fixed-bottom">
