@@ -63,9 +63,28 @@
         &.slide4 {
           .lead2 {
             position: absolute;
+            z-index: 10;
             width: 65%;
             bottom: 10%;
             animation: slide4-lead2 10s ease 0s infinite normal;
+            will-change: animation, opacity;
+          }
+          .image1 {
+            position: absolute;
+            z-index: 5;
+            width: 30%;
+            left: 10%;
+            filter: drop-shadow(10px 10px 3px $astgray);
+            animation: slide4-image1 10s ease 0s infinite normal;
+            will-change: animation, opacity;
+          }
+          .image2 {
+            position: absolute;
+            z-index: 1;
+            width: 40%;
+            top: 10%;
+            filter: drop-shadow(10px 10px 3px $astgray);
+            animation: slide4-image2 10s ease 0s infinite normal;
             will-change: animation, opacity;
           }
         }
@@ -185,11 +204,63 @@
   }
 
   75% {
-    right: -100%;
+    right: -150%;
   }
 
   100% {
-    right: -100%;
+    right: -150%;
+  }
+}
+
+@keyframes slide4-image1 {
+  0% {
+    top: 100%;
+  }
+
+  55% {
+    top: 100%;
+  }
+
+  57% {
+    top: 8%;
+  }
+
+  73% {
+    top: 3%;
+  }
+
+  75% {
+    top: -100%;
+  }
+
+  100% {
+    top: -100%;
+  }
+}
+
+@keyframes slide4-image2 {
+  0% {
+    left: 100%;
+  }
+
+  55% {
+    left: 100%;
+  }
+
+  57% {
+    left: 58%;
+  }
+
+  73% {
+    left: 53%;
+  }
+
+  75% {
+    left: -100%;
+  }
+
+  100% {
+    left: -100%;
   }
 }
 
